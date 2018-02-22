@@ -5,7 +5,11 @@ $npm install --save @ionic-native/geolocation
 src/index.html file
 <script src="http://maps.google.com/maps/api/js?key=your_goolgle api key"></script>
 <script src="cordova.js"></script>
-map.html
+
+
+
+map.html 
+
 <ion-header>
   <ion-navbar>
     <ion-title>
@@ -19,8 +23,11 @@ map.html
  
 <ion-content>
   <div #map id="map"></div> 
-</ion-content>
+</ion-content>  
+
+
 map.ts
+
 import { Component,ViewChild, ElementRef  } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
@@ -97,7 +104,10 @@ export class MapPage {
 }
  
   }
+  
+  
 map.css
+
 page-map {
  .scroll {
         height: 100%
@@ -110,7 +120,8 @@ page-map {
  
     }
     app.module.ts
-    import { NgModule, ErrorHandler } from '@angular/core';
+    
+ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
